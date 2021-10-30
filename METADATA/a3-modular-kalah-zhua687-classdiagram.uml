@@ -1,0 +1,33 @@
+@startuml
+title a3-modular-kalah-zhua687
+class kalah.Display
+class kalah.Game
+interface kalah.IDisplay
+interface kalah.IGame
+interface kalah.IGetID
+interface kalah.IGetScore
+interface kalah.IPlayerProp
+class kalah.Kalah
+class kalah.Pits
+class kalah.Player
+class kalah.PlayerProp
+class kalah.Store
+
+kalah.Display --|>kalah.IDisplay
+kalah.PlayerProp --|>kalah.IPlayerProp
+kalah.PlayerProp -->kalah.Pits
+kalah.PlayerProp -->kalah.Store
+kalah.PlayerProp -->kalah.Player
+kalah.IPlayerProp -->kalah.Pits
+kalah.IPlayerProp -->kalah.Store
+kalah.Pits --|>kalah.IGetID
+kalah.Store --|>kalah.IGetScore
+kalah.Store --|>kalah.IGetID
+kalah.Player --|>kalah.IGetScore
+kalah.Player --|>kalah.IGetID
+kalah.Kalah -->kalah.Display
+kalah.Kalah -->kalah.Game
+kalah.Game --|>kalah.IGame
+kalah.Game -->kalah.Display
+kalah.Game -->kalah.PlayerProp
+@enduml

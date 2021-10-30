@@ -1,0 +1,1647 @@
+<html>
+<head>
+<style>
+  .stripe tbody tr:nth-child(even) td {background-color:#f2f2f2;}
+  div.scrollable { width: 100%; max-height: 100px; margin: 0; padding: 0; overflow: auto;}
+</style>
+</head>
+</html>
+<body>
+<h1>Coupling Validity Study</h1>
+<p>Measurements for the metrics used in the Coupling Validity Study: Paul Ralph and Ewan Tempero Construct Validity in Software Engineering Research and Software Metrics 22nd International Conference on Evaluation and Assessment in Software Engineering (EASE) 2018. https://doi.org/10.1145/3210459.3210461</p>
+<h3>Dataset attributes</h3>
+<table style="empty-cells: show" border>
+  <tr valign=top>
+    <th style="text-align:left"><div class="scrollable">
+Timestamp
+</div></th>
+    <td><div class="scrollable">
+Sun May 16 20:48:18 NZST 2021
+</div></td>
+  </tr>
+  <tr valign=top>
+    <th style="text-align:left"><div class="scrollable">
+Tool
+</div></th>
+    <td><div class="scrollable">
+mete-analysis(coupling validity):20200425
+</div></td>
+  </tr>
+  <tr valign=top>
+    <th style="text-align:left"><div class="scrollable">
+System
+</div></th>
+    <td><div class="scrollable">
+a3-modular-kalah-zhua687
+</div></td>
+  </tr>
+  <tr valign=top>
+    <th style="text-align:left"><div class="scrollable">
+Codebase
+</div></th>
+    <td><div class="scrollable">
+submissions/a3-modular-kalah-zhua687/a3-modular-kalah-zhua687
+</div></td>
+  </tr>
+</table>
+<h3>Measurements</h3>
+<h4>Metadata<h4>
+<table style="empty-cells: show" border>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+Kind
+</div></td>
+    <td><div class="scrollable">
+Nominal
+</div></td>
+    <td><div class="scrollable">
+What 'kind' of module (Class, Interface, Enum, Annotation, Exception)
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+FAN-out (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (unidir) Dependencies are recorded as uni-directional, only from source to target.; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+FAN-in (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (unidir) Dependencies are recorded as uni-directional, only from source to target.; (fanin) Record only dependencies from target to source (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+FAN-bidir (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (bidir) Dependencies are recorded as bi-directional. If A has a dependency to B, then B has a dependency to A; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+FAN-out-occr (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (unidir) Dependencies are recorded as uni-directional, only from source to target.; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (occr) Record each occurrence of a dependency separately; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+CBO (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (bidir) Dependencies are recorded as bi-directional. If A has a dependency to B, then B has a dependency to A; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+CBO-out (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (unidir) Dependencies are recorded as uni-directional, only from source to target.; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+MPC (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (pres) Record only the presence (or not) of an occurrence of a dependency between entities
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+ICP (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM1 (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM1-inst (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcinst) Only record dependencies with respect to instance fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM2 (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM2-inst (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcinst) Only record dependencies with respect to instance fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM4 (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(Can't provide easy evidence for number of connected components) (srcinst) Only record dependencies with respect to instance fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+NumMeth (Size)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (raw) Do not record dependencies due to synthetic constructs; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+NumFlds(Size)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtall) Record dependencies to target modules whether or not the declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (type) Record dependencies between all types, including interfaces, enums, an annotations; (occr) Record each occurrence of a dependency separately; (prim) Include dependencies to primitive types; (same) Include dependencies to the same type
+</div></td>
+  </tr>
+</table>
+<h4>Data<h4>
+<div class="stripe">
+<table style="empty-cells: show" border>
+  <tr valign=top>
+    <th><div class="scrollable">
+Entity
+</div></th>
+    <th><div class="scrollable">
+Kind
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+FAN-out (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+FAN-in (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+FAN-bidir (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+FAN-out-occr (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+CBO (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+CBO-out (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+MPC (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+ICP (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM1 (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM1-inst (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM2 (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM2-inst (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM4 (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+NumMeth (Size)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+NumFlds(Size)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+Main
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[Return:Main#public static void main(java.lang.String[]) {}, Main#public <init>() {}>junit.framework.TestCase#<init>() <>*:[1]]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.Display
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.IDisplay]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.IDisplay, kalah.Kalah, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[Implements:kalah.Display>kalah.IDisplay]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+5
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display#public int getUserInput() {}>>>kalah.Display#public void printWinner(int) {}, kalah.Display#public int getUserInput() {}>>>kalah.Display#public void printScore(int,int) {}, kalah.Display#public int getUserInput() {}>>>kalah.Display#public void printGameOver() {}, kalah.Display#public int getUserInput() {}>>>kalah.Display#public void printHouseEmpty() {}, kalah.Display#public int getUserInput() {}>>>kalah.Display#public void boardPrint(int[],int[],int,int) {}]
+</div></td>
+    <td><div class="scrollable">
+5
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display#public int getUserInput() {}>>>kalah.Display#public void printWinner(int) {}, kalah.Display#public int getUserInput() {}>>>kalah.Display#public void printScore(int,int) {}, kalah.Display#public int getUserInput() {}>>>kalah.Display#public void printGameOver() {}, kalah.Display#public int getUserInput() {}>>>kalah.Display#public void printHouseEmpty() {}, kalah.Display#public int getUserInput() {}>>>kalah.Display#public void boardPrint(int[],int[],int,int) {}]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display#public void userInput(int) {}]
+</div></td>
+    <td><div class="scrollable">
+8
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.Display#public void userInput(int) {}, kalah.Display#public <init>(com.qualitascorpus.testsupport.IO) {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.Display#public void printWinner(int) {}, Return:kalah.Display#public void boardPrint(int[],int[],int,int) {}, Return:kalah.Display#public void printScore(int,int) {}, Return:kalah.Display#public int getUserInput() {}, Return:kalah.Display#public void printHouseEmpty() {}, Return:kalah.Display#public void printGameOver() {}]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display#private int UserPrompt, kalah.Display#private final com.qualitascorpus.testsupport.IO io]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.Game
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.IGame, kalah.Display, kalah.PlayerProp]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.IGame, kalah.Display, kalah.PlayerProp, kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+37
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[8], Implements:kalah.Game>kalah.IGame, kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnPlayerScore(int) {}:[41], kalah.Game#public boolean runGame() {}>kalah.Display#public int getUserInput() {}:[53], kalah.Game#public boolean runGame() {}>kalah.Display#public void printHouseEmpty() {}:[62], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public boolean checkHouseEmpty() {}:[60], kalah.Game#public boolean runGame() {}>kalah.Display#public void printGameOver() {}:[28], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public void playerMoves(int) {}:[58], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[4], kalah.Game#public <init>(kalah.Display) {}>kalah.PlayerProp#public <init>() {}:[4], kalah.Game#public boolean runGame() {}>kalah.Display#public void userInput(int) {}:[51], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[69], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[18], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[11], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[4], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[35], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[25], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[2], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[8], kalah.Game#private final kalah.PlayerProp playerProp, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnPlayerScore(int) {}:[14], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[6], kalah.Game#public boolean runGame() {}>kalah.Display#public void printScore(int,int) {}:[44], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int getCurrentPlayer() {}:[50], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public void SetPlayerScores(int,int) {}:[12], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[31], kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}>kalah.PlayerProp#public int getCurrentPlayer() {}:[7], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[65], Parameter:kalah.Game#public <init>(kalah.Display) {}>kalah.Display:[0], kalah.Game#private final kalah.Display display, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[72], kalah.Game#public boolean runGame() {}>kalah.Display#public void printWinner(int) {}:[47], kalah.Game#public boolean runGame() {}>kalah.Display#public void printGameOver() {}:[15], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[38], kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}>kalah.PlayerProp#public int getCurrentPlayer() {}:[5], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[22], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public void SetPlayerScores(int,int) {}:[10]]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display, kalah.PlayerProp, kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display, kalah.PlayerProp]
+</div></td>
+    <td><div class="scrollable">
+18
+</div></td>
+    <td><div class="scrollable">
+[runGame()>kalah.Display#public void userInput(int) {}, runGame()>kalah.PlayerProp#public int returnStoreScore(int) {}, runGame()>kalah.Display#public int getUserInput() {}, runGame()>kalah.PlayerProp#public int returnPlayerScore(int) {}, runGame()>kalah.Display#public void printGameOver() {}, gameProgress(java.lang.String,int,int,int,int)>kalah.PlayerProp#public int getCurrentPlayer() {}, runGame()>kalah.PlayerProp#public boolean checkHouseEmpty() {}, runGame()>kalah.Display#public void printScore(int,int) {}, getData(java.lang.String)>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, runGame()>kalah.PlayerProp#public int[] pitArray(int) {}, <init>(kalah.Display)>kalah.PlayerProp#public <init>() {}, runGame()>kalah.PlayerProp#public void playerMoves(int) {}, runGame()>kalah.Display#public void boardPrint(int[],int[],int,int) {}, runGame()>kalah.Display#public void printWinner(int) {}, runGame()>kalah.Display#public void printHouseEmpty() {}, getData(java.lang.String)>kalah.PlayerProp#public int returnPlayerScore(int) {}, getData(java.lang.String)>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, runGame()>kalah.PlayerProp#public int getCurrentPlayer() {}]
+</div></td>
+    <td><div class="scrollable">
+75
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[4][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[25][3]int, kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[69][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[25][0]int[], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnPlayerScore(int) {}:[41], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public void SetPlayerScores(int,int) {}:[10][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[25][2]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnPlayerScore(int) {}:[14][0]int, kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public void playerMoves(int) {}:[58], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[18], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[69], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[11], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[22][0]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[2], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[8], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnPlayerScore(int) {}:[14], kalah.Game#public boolean runGame() {}>kalah.Display#public void printScore(int,int) {}:[44][1]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[4][1]int, kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public void playerMoves(int) {}:[58][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void printScore(int,int) {}:[44], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[8][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[25][1]int[], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnPlayerScore(int) {}:[41][0]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[6][1]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[8][1]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[2][1]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public void SetPlayerScores(int,int) {}:[12][0]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public void SetPlayerScores(int,int) {}:[12], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[11][3]int, kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[31], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[72][0]int[], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[72], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[65][0]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public void SetPlayerScores(int,int) {}:[10][1]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void printGameOver() {}:[15], kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}>kalah.PlayerProp#public int getCurrentPlayer() {}:[5], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public void SetPlayerScores(int,int) {}:[12][1]int, kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[8], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[38][1]int[], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[72][3]int, kalah.Game#public boolean runGame() {}>kalah.Display#public int getUserInput() {}:[53], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[38][2]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void printHouseEmpty() {}:[62], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public boolean checkHouseEmpty() {}:[60], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[35][0]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[2][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[11][1]int[], kalah.Game#public boolean runGame() {}>kalah.Display#public void printGameOver() {}:[28], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[72][1]int[], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[18][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void printScore(int,int) {}:[44][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[11][0]int[], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[4], kalah.Game#public boolean runGame() {}>kalah.Display#public void userInput(int) {}:[51], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[4][0]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[6][0]int, kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[4], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[35], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[11][2]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[25], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public int returnSeedsPit(int,int) {}:[6], kalah.Game#public boolean runGame() {}>kalah.Display#public void printWinner(int) {}:[47][0]int, kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[8][0]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[38][0]int[], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[31][0]int, kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int getCurrentPlayer() {}:[50], kalah.Game#public boolean runGame() {}>kalah.Display#public void userInput(int) {}:[51][0]int, kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}>kalah.PlayerProp#public int getCurrentPlayer() {}:[7], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int[] pitArray(int) {}:[65], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[38][3]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void printWinner(int) {}:[47], kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[72][2]int, kalah.Game#public boolean runGame() {}>kalah.Display#public void boardPrint(int[],int[],int,int) {}:[38], kalah.Game#public boolean runGame() {}>kalah.PlayerProp#public int returnStoreScore(int) {}:[22], kalah.Game#public int getData(java.lang.String) {}>kalah.PlayerProp#public void SetPlayerScores(int,int) {}:[10]]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game#public int getData(java.lang.String) {}>>>kalah.Game#public int getWinner() {}, kalah.Game#public boolean runGame() {}>>>kalah.Game#public int getWinner() {}, kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}>>>kalah.Game#public int getWinner() {}]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game#public int getData(java.lang.String) {}>>>kalah.Game#public int getWinner() {}, kalah.Game#public boolean runGame() {}>>>kalah.Game#public int getWinner() {}, kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}>>>kalah.Game#public int getWinner() {}]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game#public boolean runGame() {}]
+</div></td>
+    <td><div class="scrollable">
+5
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.Game#public int getWinner() {}, Return:kalah.Game#public boolean runGame() {}, Return:kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}, Return:kalah.Game#public int getData(java.lang.String) {}, kalah.Game#public <init>(kalah.Display) {}>java.lang.Object#public <init>() <>*:[1]]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game#private final kalah.PlayerProp playerProp, kalah.Game#private final kalah.Display display, kalah.Game#private int playerInput, kalah.Game#private boolean printBoardOnce]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.IDisplay
+</div></td>
+    <td><div class="scrollable">
+Interface
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+7
+</div></td>
+    <td><div class="scrollable">
+[kalah.IDisplay#public abstract void printHouseEmpty() <>, kalah.IDisplay#public abstract void printWinner(int) <>, kalah.IDisplay#public abstract void printScore(int,int) <>, kalah.IDisplay#public abstract void printGameOver() <>, kalah.IDisplay#public abstract void boardPrint(int[],int[],int,int) <>, kalah.IDisplay#public abstract void userInput(int) <>, kalah.IDisplay#public abstract int getUserInput() <>]
+</div></td>
+    <td><div class="scrollable">
+7
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.IDisplay#public abstract int getUserInput() <>, Return:kalah.IDisplay#public abstract void printGameOver() <>, Return:kalah.IDisplay#public abstract void userInput(int) <>, Return:kalah.IDisplay#public abstract void printScore(int,int) <>, Return:kalah.IDisplay#public abstract void boardPrint(int[],int[],int,int) <>, Return:kalah.IDisplay#public abstract void printWinner(int) <>, Return:kalah.IDisplay#public abstract void printHouseEmpty() <>]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.IGame
+</div></td>
+    <td><div class="scrollable">
+Interface
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.IGame#public abstract int getWinner() <>, kalah.IGame#public abstract int gameProgress(java.lang.String,int,int,int,int) <>, kalah.IGame#public abstract boolean runGame() <>, kalah.IGame#public abstract int getData(java.lang.String) <>]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.IGame#public abstract int getWinner() <>, Return:kalah.IGame#public abstract boolean runGame() <>, Return:kalah.IGame#public abstract int gameProgress(java.lang.String,int,int,int,int) <>, Return:kalah.IGame#public abstract int getData(java.lang.String) <>]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.IGetID
+</div></td>
+    <td><div class="scrollable">
+Interface
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits, kalah.Store, kalah.Player]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits, kalah.Store, kalah.Player]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.IGetID#public abstract int getID() <>]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.IGetID#public abstract int getID() <>]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.IGetScore
+</div></td>
+    <td><div class="scrollable">
+Interface
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Store, kalah.Player]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Store, kalah.Player]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.IGetScore#public abstract int getScore() <>]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.IGetScore#public abstract int getScore() <>]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.IPlayerProp
+</div></td>
+    <td><div class="scrollable">
+Interface
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits, kalah.Store]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp, kalah.Pits, kalah.Store]
+</div></td>
+    <td><div class="scrollable">
+6
+</div></td>
+    <td><div class="scrollable">
+[Parameter:kalah.IPlayerProp#public abstract kalah.Pits switchPits(kalah.Pits) <>>kalah.Pits:[0], Parameter:kalah.IPlayerProp#public abstract boolean checkCapture(int,kalah.Pits,kalah.Store) <>>kalah.Pits:[1], Parameter:kalah.IPlayerProp#public abstract void addExcessSeeds(kalah.Pits,kalah.Store,int) <>>kalah.Store:[1], Return:kalah.IPlayerProp#public abstract kalah.Pits switchPits(kalah.Pits) <>, Parameter:kalah.IPlayerProp#public abstract void addExcessSeeds(kalah.Pits,kalah.Store,int) <>>kalah.Pits:[0], Parameter:kalah.IPlayerProp#public abstract boolean checkCapture(int,kalah.Pits,kalah.Store) <>>kalah.Store:[2]]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+14
+</div></td>
+    <td><div class="scrollable">
+[kalah.IPlayerProp#public abstract kalah.Pits switchPits(kalah.Pits) <>, kalah.IPlayerProp#public abstract int returnStoreScore(int) <>, kalah.IPlayerProp#public abstract int returnSeedsPit(int,int) <>, kalah.IPlayerProp#public abstract int getOppositePit(int) <>, kalah.IPlayerProp#public abstract void SetPlayerScores(int,int) <>, kalah.IPlayerProp#public abstract void swapPlayersTurn() <>, kalah.IPlayerProp#public abstract void assignObjects() <>, kalah.IPlayerProp#public abstract int returnPlayerScore(int) <>, kalah.IPlayerProp#public abstract int[] pitArray(int) <>, kalah.IPlayerProp#public abstract void playerMoves(int) <>, kalah.IPlayerProp#public abstract int getCurrentPlayer() <>, kalah.IPlayerProp#public abstract void addExcessSeeds(kalah.Pits,kalah.Store,int) <>, kalah.IPlayerProp#public abstract boolean checkCapture(int,kalah.Pits,kalah.Store) <>, kalah.IPlayerProp#public abstract boolean checkHouseEmpty() <>]
+</div></td>
+    <td><div class="scrollable">
+14
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.IPlayerProp#public abstract void swapPlayersTurn() <>, Return:kalah.IPlayerProp#public abstract void SetPlayerScores(int,int) <>, Return:kalah.IPlayerProp#public abstract int[] pitArray(int) <>, Return:kalah.IPlayerProp#public abstract void assignObjects() <>, Return:kalah.IPlayerProp#public abstract kalah.Pits switchPits(kalah.Pits) <>, Return:kalah.IPlayerProp#public abstract int returnPlayerScore(int) <>, Return:kalah.IPlayerProp#public abstract int returnStoreScore(int) <>, Return:kalah.IPlayerProp#public abstract int getOppositePit(int) <>, Return:kalah.IPlayerProp#public abstract boolean checkCapture(int,kalah.Pits,kalah.Store) <>, Return:kalah.IPlayerProp#public abstract boolean checkHouseEmpty() <>, Return:kalah.IPlayerProp#public abstract void playerMoves(int) <>, Return:kalah.IPlayerProp#public abstract int returnSeedsPit(int,int) <>, Return:kalah.IPlayerProp#public abstract int getCurrentPlayer() <>, Return:kalah.IPlayerProp#public abstract void addExcessSeeds(kalah.Pits,kalah.Store,int) <>]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.Kalah
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+5
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.Game#public <init>(kalah.Display) {}:[2], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.Game#public boolean runGame() {}:[4], Local:kalah.Game:[1], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.Display#public <init>(com.qualitascorpus.testsupport.IO) {}:[1], Local:kalah.Display:[0]]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Display, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[play(com.qualitascorpus.testsupport.IO)>kalah.Game#public <init>(kalah.Display) {}, play(com.qualitascorpus.testsupport.IO)>kalah.Game#public boolean runGame() {}, play(com.qualitascorpus.testsupport.IO)>kalah.Display#public <init>(com.qualitascorpus.testsupport.IO) {}]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.Game#public boolean runGame() {}:[4]]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#public static void main(java.lang.String[]) {}>>>kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[value0]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.Kalah#public static void main(java.lang.String[]) {}, kalah.Kalah#public <init>() {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#private boolean gameRun]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.Pits
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp, kalah.IPlayerProp]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp, kalah.IPlayerProp, kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[Implements:kalah.Pits>kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits#public int getID() {}>>>kalah.Pits#public int getPitsLength() {}, kalah.Pits#public int getID() {}>>>kalah.Pits#public int getSeedsInPos(int) {}, kalah.Pits#public int getID() {}>>>kalah.Pits#public void incrementPit(int) {}, kalah.Pits#public int getID() {}>>>kalah.Pits#public void emptyPit(int) {}]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits#public int getID() {}>>>kalah.Pits#public int getPitsLength() {}, kalah.Pits#public int getID() {}>>>kalah.Pits#public int getSeedsInPos(int) {}, kalah.Pits#public int getID() {}>>>kalah.Pits#public void incrementPit(int) {}, kalah.Pits#public int getID() {}>>>kalah.Pits#public void emptyPit(int) {}]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits#public int getID() {}, kalah.Pits#public void incrementPit(int) {}]
+</div></td>
+    <td><div class="scrollable">
+6
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.Pits#public int getID() {}, Return:kalah.Pits#public int getSeedsInPos(int) {}, kalah.Pits#public <init>(int) {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.Pits#public void incrementPit(int) {}, Return:kalah.Pits#public void emptyPit(int) {}, Return:kalah.Pits#public int getPitsLength() {}]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits#private final int PitsID, kalah.Pits#private final int[] pits]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.Player
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.IGetScore, kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp, kalah.IGetScore, kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[Implements:kalah.Player>kalah.IGetScore, Implements:kalah.Player>kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Player#public int getID() {}>>>kalah.Player#public void setPlayerScore(int) {}, kalah.Player#public int getID() {}>>>kalah.Player#public int getScore() {}]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Player#public int getID() {}>>>kalah.Player#public void setPlayerScore(int) {}, kalah.Player#public int getID() {}>>>kalah.Player#public int getScore() {}]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[value0]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[value0]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Player#public int getID() {}, kalah.Player#public void setPlayerScore(int) {}]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.Player#public int getID() {}, Return:kalah.Player#public int getScore() {}, Return:kalah.Player#public void setPlayerScore(int) {}, kalah.Player#public <init>(int) {}>java.lang.Object#public <init>() <>*:[1]]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Player#private int score, kalah.Player#private final int PlayerID]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.PlayerProp
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.IPlayerProp, kalah.Pits, kalah.Store, kalah.Player]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+5
+</div></td>
+    <td><div class="scrollable">
+[kalah.IPlayerProp, kalah.Pits, kalah.Store, kalah.Player, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+68
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[5], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public void incrementPit(int) {}:[15], kalah.PlayerProp#public int returnPlayerScore(int) {}>kalah.Player#public int getScore() {}:[6], kalah.PlayerProp#public <init>() {}>kalah.Store#public <init>(int) {}:[11], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[8], kalah.PlayerProp#private final kalah.Store storeOne, kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>kalah.Player#public int getID() {}:[3], kalah.PlayerProp#private final kalah.Player playerTwo, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>kalah.Pits#public int getID() {}:[2], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Store#public int getID() {}:[2], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public int getPitsLength() {}:[5], kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[8], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Player#public void setPlayerScore(int) {}:[6], Parameter:kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits:[0], kalah.PlayerProp#public void swapPlayersTurn() {}>kalah.Player#public int getID() {}:[3], kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getID() {}:[4], kalah.PlayerProp#public int returnStoreScore(int) {}>kalah.Store#public int getScore() {}:[6], kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getPitsLength() {}:[7], Local:kalah.Pits:[0], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void emptyPit(int) {}:[17], kalah.PlayerProp#public int returnPlayerScore(int) {}>kalah.Player#public int getID() {}:[2], kalah.PlayerProp#public void swapPlayersTurn() {}>kalah.Player#public int getID() {}:[8], kalah.PlayerProp#private final kalah.Store storeTwo, kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>kalah.Pits#public int getID() {}:[1], kalah.PlayerProp#public int returnSeedsPit(int,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[6], Parameter:kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits:[1], kalah.PlayerProp#public <init>() {}>kalah.Player#public <init>(int) {}:[9], kalah.PlayerProp#public <init>() {}>kalah.Pits#public <init>(int) {}:[3], kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getPitsLength() {}:[2], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[3], kalah.PlayerProp#public int returnStoreScore(int) {}>kalah.Store#public int getID() {}:[2], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[3], Implements:kalah.PlayerProp>kalah.IPlayerProp, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getPitsLength() {}:[2], kalah.PlayerProp#public <init>() {}>kalah.Store#public <init>(int) {}:[13], Parameter:kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>kalah.Pits:[0], kalah.PlayerProp#public void assignObjects() {}>kalah.Player#public int getID() {}:[3], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Store#public int getScore() {}:[5], kalah.PlayerProp#private final kalah.Pits pitsTwo, kalah.PlayerProp#public void swapPlayersTurn() {}>kalah.Player#public int getID() {}:[5], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getID() {}:[1], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[11], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Store#public int getScore() {}:[9], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Store#public void increaseStore(int) {}:[12], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void emptyPit(int) {}:[7], Return:kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void incrementPit(int) {}:[15], kalah.PlayerProp#private kalah.Pits pits, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[6], kalah.PlayerProp#public int returnStoreScore(int) {}>kalah.Store#public int getScore() {}:[4], kalah.PlayerProp#private kalah.Store store, kalah.PlayerProp#public <init>() {}>kalah.Player#public int getID() {}:[16], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getPitsLength() {}:[5], kalah.PlayerProp#private final kalah.Player playerOne, kalah.PlayerProp#private final kalah.Pits pitsOne, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public void emptyPit(int) {}:[14], Local:kalah.Pits:[2], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Store#public void increaseStore(int) {}:[3], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getID() {}:[6], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public void emptyPit(int) {}:[8], kalah.PlayerProp#public int returnPlayerScore(int) {}>kalah.Player#public int getScore() {}:[4], kalah.PlayerProp#public int returnSeedsPit(int,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[4], Parameter:kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Store:[1], kalah.PlayerProp#public <init>() {}>kalah.Player#public <init>(int) {}:[7], kalah.PlayerProp#public <init>() {}>kalah.Pits#public <init>(int) {}:[5], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Player#public void setPlayerScore(int) {}:[10], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Store#public void increaseStore(int) {}:[7], Parameter:kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Store:[2]]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits, kalah.Store, kalah.Player, kalah.Game]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.Pits, kalah.Store, kalah.Player]
+</div></td>
+    <td><div class="scrollable">
+34
+</div></td>
+    <td><div class="scrollable">
+[returnStoreScore(int)>kalah.Store#public int getScore() {}, <init>()>kalah.Store#public <init>(int) {}, returnPlayerScore(int)>kalah.Player#public int getScore() {}, playerMoves(int)>kalah.Pits#public int getPitsLength() {}, SetPlayerScores(int,int)>kalah.Store#public int getScore() {}, checkCapture(int,kalah.Pits,kalah.Store)>kalah.Store#public void increaseStore(int) {}, addExcessSeeds(kalah.Pits,kalah.Store,int)>kalah.Store#public void increaseStore(int) {}, playerMoves(int)>kalah.Pits#public int getSeedsInPos(int) {}, addExcessSeeds(kalah.Pits,kalah.Store,int)>kalah.Pits#public int getSeedsInPos(int) {}, addExcessSeeds(kalah.Pits,kalah.Store,int)>kalah.Pits#public void emptyPit(int) {}, addExcessSeeds(kalah.Pits,kalah.Store,int)>kalah.Pits#public void incrementPit(int) {}, pitArray(int)>kalah.Pits#public int getPitsLength() {}, <init>()>kalah.Pits#public <init>(int) {}, returnStoreScore(int)>kalah.Store#public int getID() {}, SetPlayerScores(int,int)>kalah.Store#public int getID() {}, returnPlayerScore(int)>kalah.Player#public int getID() {}, returnSeedsPit(int,int)>kalah.Pits#public int getID() {}, checkCapture(int,kalah.Pits,kalah.Store)>kalah.Pits#public int getSeedsInPos(int) {}, assignObjects()>kalah.Player#public int getID() {}, checkCapture(int,kalah.Pits,kalah.Store)>kalah.Pits#public void emptyPit(int) {}, switchPits(kalah.Pits)>kalah.Player#public int getID() {}, addExcessSeeds(kalah.Pits,kalah.Store,int)>kalah.Pits#public int getPitsLength() {}, pitArray(int)>kalah.Pits#public int getSeedsInPos(int) {}, playerMoves(int)>kalah.Pits#public void incrementPit(int) {}, playerMoves(int)>kalah.Pits#public void emptyPit(int) {}, swapPlayersTurn()>kalah.Player#public int getID() {}, <init>()>kalah.Player#public <init>(int) {}, switchPits(kalah.Pits)>kalah.Pits#public int getID() {}, addExcessSeeds(kalah.Pits,kalah.Store,int)>kalah.Pits#public int getID() {}, pitArray(int)>kalah.Pits#public int getID() {}, checkCapture(int,kalah.Pits,kalah.Store)>kalah.Pits#public int getPitsLength() {}, returnSeedsPit(int,int)>kalah.Pits#public int getSeedsInPos(int) {}, <init>()>kalah.Player#public int getID() {}, SetPlayerScores(int,int)>kalah.Player#public void setPlayerScore(int) {}]
+</div></td>
+    <td><div class="scrollable">
+65
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[5], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public void incrementPit(int) {}:[15], kalah.PlayerProp#public int returnPlayerScore(int) {}>kalah.Player#public int getScore() {}:[6], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Player#public void setPlayerScore(int) {}:[6][0]int, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Store#public void increaseStore(int) {}:[12][0]int, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[8], kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>kalah.Player#public int getID() {}:[3], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public void emptyPit(int) {}:[14][0]int, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>kalah.Pits#public int getID() {}:[2], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Store#public int getID() {}:[2], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public void emptyPit(int) {}:[8][0]int, kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public int getPitsLength() {}:[5], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Store#public void increaseStore(int) {}:[7][0]int, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[11][0]int, kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[8], kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[8][0]int, kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Player#public void setPlayerScore(int) {}:[6], kalah.PlayerProp#public void swapPlayersTurn() {}>kalah.Player#public int getID() {}:[3], kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getID() {}:[4], kalah.PlayerProp#public int returnStoreScore(int) {}>kalah.Store#public int getScore() {}:[6], kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getPitsLength() {}:[7], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[6][0]int, kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void emptyPit(int) {}:[17], kalah.PlayerProp#public int returnPlayerScore(int) {}>kalah.Player#public int getID() {}:[2], kalah.PlayerProp#public void swapPlayersTurn() {}>kalah.Player#public int getID() {}:[8], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[8][0]int, kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>kalah.Pits#public int getID() {}:[1], kalah.PlayerProp#public int returnSeedsPit(int,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[6], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void emptyPit(int) {}:[7][0]int, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Store#public void increaseStore(int) {}:[3][0]int, kalah.PlayerProp#public int[] pitArray(int) {}>kalah.Pits#public int getPitsLength() {}:[2], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[3], kalah.PlayerProp#public int returnStoreScore(int) {}>kalah.Store#public int getID() {}:[2], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[3], kalah.PlayerProp#public int returnSeedsPit(int,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[4][0]int, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[6][0]int, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getPitsLength() {}:[2], kalah.PlayerProp#public void assignObjects() {}>kalah.Player#public int getID() {}:[3], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void incrementPit(int) {}:[15][0]int, kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Store#public int getScore() {}:[5], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void emptyPit(int) {}:[17][0]int, kalah.PlayerProp#public void swapPlayersTurn() {}>kalah.Player#public int getID() {}:[5], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getID() {}:[1], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[11], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Store#public int getScore() {}:[9], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public void incrementPit(int) {}:[15][0]int, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Store#public void increaseStore(int) {}:[12], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void emptyPit(int) {}:[7], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public void incrementPit(int) {}:[15], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[6], kalah.PlayerProp#public int returnStoreScore(int) {}>kalah.Store#public int getScore() {}:[4], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Player#public void setPlayerScore(int) {}:[10][0]int, kalah.PlayerProp#public <init>() {}>kalah.Player#public int getID() {}:[16], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[5][0]int, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getPitsLength() {}:[5], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public int getSeedsInPos(int) {}:[3][0]int, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public void emptyPit(int) {}:[14], kalah.PlayerProp#public void playerMoves(int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[3][0]int, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Store#public void increaseStore(int) {}:[3], kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>kalah.Pits#public int getID() {}:[6], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Pits#public void emptyPit(int) {}:[8], kalah.PlayerProp#public int returnPlayerScore(int) {}>kalah.Player#public int getScore() {}:[4], kalah.PlayerProp#public int returnSeedsPit(int,int) {}>kalah.Pits#public int getSeedsInPos(int) {}:[4], kalah.PlayerProp#public void SetPlayerScores(int,int) {}>kalah.Player#public void setPlayerScore(int) {}:[10], kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>kalah.Store#public void increaseStore(int) {}:[7]]
+</div></td>
+    <td><div class="scrollable">
+67
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int getCurrentPlayer() {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public void SetPlayerScores(int,int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void assignObjects() {}, kalah.PlayerProp#public void SetPlayerScores(int,int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int getOppositePit(int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public void assignObjects() {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public int returnPlayerScore(int) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int[] pitArray(int) {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public int[] pitArray(int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void assignObjects() {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int[] pitArray(int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int returnPlayerScore(int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int[] pitArray(int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int getOppositePit(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public boolean checkHouseEmpty() {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int returnPlayerScore(int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public void playerMoves(int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int getOppositePit(int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int returnPlayerScore(int) {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int getCurrentPlayer() {}]
+</div></td>
+    <td><div class="scrollable">
+67
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int getCurrentPlayer() {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public void SetPlayerScores(int,int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void assignObjects() {}, kalah.PlayerProp#public void SetPlayerScores(int,int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int getOppositePit(int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public void assignObjects() {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public int returnPlayerScore(int) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int[] pitArray(int) {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public int[] pitArray(int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void assignObjects() {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public int[] pitArray(int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public int returnPlayerScore(int) {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int returnPlayerScore(int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int[] pitArray(int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public void playerMoves(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int getOppositePit(int) {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public boolean checkHouseEmpty() {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void SetPlayerScores(int,int) {}, kalah.PlayerProp#public int returnStoreScore(int) {}>>>kalah.PlayerProp#public int[] pitArray(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int returnStoreScore(int) {}, kalah.PlayerProp#public int getCurrentPlayer() {}>>>kalah.PlayerProp#public int returnPlayerScore(int) {}, kalah.PlayerProp#public int getOppositePit(int) {}>>>kalah.PlayerProp#public int returnSeedsPit(int,int) {}, kalah.PlayerProp#public void playerMoves(int) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public void swapPlayersTurn() {}, kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}>>>kalah.PlayerProp#public int getOppositePit(int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int returnPlayerScore(int) {}, kalah.PlayerProp#public int returnSeedsPit(int,int) {}>>>kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, kalah.PlayerProp#public boolean checkHouseEmpty() {}>>>kalah.PlayerProp#public int getCurrentPlayer() {}]
+</div></td>
+    <td><div class="scrollable">
+43
+</div></td>
+    <td><div class="scrollable">
+[value6, value5, value8, value31, value7, value30, value2, value1, value4, value3, value9, value19, value18, value15, value37, value14, value36, value17, value39, value16, value38, value11, value33, value10, value32, value13, value35, value12, value34, value40, value20, value42, value41, value29, value26, value25, value0, value28, value27, value22, value21, value24, value23]
+</div></td>
+    <td><div class="scrollable">
+43
+</div></td>
+    <td><div class="scrollable">
+[value6, value5, value8, value31, value7, value30, value2, value1, value4, value3, value9, value19, value18, value15, value37, value14, value36, value17, value39, value16, value38, value11, value33, value10, value32, value13, value35, value12, value34, value40, value20, value42, value41, value29, value26, value25, value0, value28, value27, value22, value21, value24, value23]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp#public void swapPlayersTurn() {}]
+</div></td>
+    <td><div class="scrollable">
+15
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp#public <init>() {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.PlayerProp#public void assignObjects() {}, Return:kalah.PlayerProp#public int returnSeedsPit(int,int) {}, Return:kalah.PlayerProp#public int returnStoreScore(int) {}, Return:kalah.PlayerProp#public int getOppositePit(int) {}, Return:kalah.PlayerProp#public int getCurrentPlayer() {}, Return:kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}, Return:kalah.PlayerProp#public void SetPlayerScores(int,int) {}, Return:kalah.PlayerProp#public void playerMoves(int) {}, Return:kalah.PlayerProp#public boolean checkHouseEmpty() {}, Return:kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}, Return:kalah.PlayerProp#public void swapPlayersTurn() {}, Return:kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}, Return:kalah.PlayerProp#public int[] pitArray(int) {}, Return:kalah.PlayerProp#public int returnPlayerScore(int) {}]
+</div></td>
+    <td><div class="scrollable">
+10
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp#private final kalah.Player playerTwo, kalah.PlayerProp#private final kalah.Pits pitsTwo, kalah.PlayerProp#private kalah.Store store, kalah.PlayerProp#private final kalah.Store storeTwo, kalah.PlayerProp#private int currentPlayer, kalah.PlayerProp#private final kalah.Player playerOne, kalah.PlayerProp#public boolean noSeeds, kalah.PlayerProp#private final kalah.Pits pitsOne, kalah.PlayerProp#private final kalah.Store storeOne, kalah.PlayerProp#private kalah.Pits pits]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.Store
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.IGetScore, kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp, kalah.IPlayerProp]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp, kalah.IPlayerProp, kalah.IGetScore, kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[Implements:kalah.Store>kalah.IGetScore, Implements:kalah.Store>kalah.IGetID]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.PlayerProp]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Store#public int getID() {}>>>kalah.Store#public int getScore() {}, kalah.Store#public int getID() {}>>>kalah.Store#public void increaseStore(int) {}]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Store#public int getID() {}>>>kalah.Store#public int getScore() {}, kalah.Store#public int getID() {}>>>kalah.Store#public void increaseStore(int) {}]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[value0]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[value0]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Store#public int getID() {}, kalah.Store#public int getScore() {}]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.Store#public void increaseStore(int) {}, kalah.Store#public <init>(int) {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.Store#public int getID() {}, Return:kalah.Store#public int getScore() {}]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Store#private int storeNum, kalah.Store#private final int StoreID]
+</div></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

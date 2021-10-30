@@ -1,0 +1,26 @@
+#TITLE	NCLOC for a3-modular-kalah-zhua687
+#SUMMARY	Non-comment non-blank lines of code per top-level module
+
+##Dataset attributes
+Timestamp	20210508 18:05:11 NZST
+Tool	loc.pl 20170704T0800
+System	a3-modular-kalah-zhua687
+Codebase	./submissions/a3-modular-kalah-zhua687/src
+
+##Measurements
+#Metadata
+NCLOC	UnboundedCount	Non-comment non-blank lines of code for module (first line with simple name to line with closing brace)
+#Data
+#Entity	NCLOC
+kalah.Display	40
+kalah.Game	82
+kalah.IDisplay	9
+kalah.IGame	6
+kalah.IGetID	3
+kalah.IGetScore	3
+kalah.IPlayerProp	16
+kalah.Kalah	13
+kalah.Pits	24
+kalah.Player	17
+kalah.PlayerProp	172
+kalah.Store	17

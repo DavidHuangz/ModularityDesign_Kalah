@@ -1,0 +1,40 @@
+#TITLE	OO Measurements
+#SUMMARY	Description of static structure of system. Includes measurements of individual modules and measurements of the overall design.
+
+##Dataset attributes
+Timestamp	Sun May 16 20:44:55 NZST 2021
+Tool	mete-analysis(static structure):20180206T1230
+System	a3-modular-kalah-zhua687
+Codebase	submissions/a3-modular-kalah-zhua687/a3-modular-kalah-zhua687
+
+##Module Attributes
+#Entity	Ce	Ca	CON	DIF	DIM	DSF	DSM	DSFF	MIF	MIM	MSF	MSM	MAIN	CLS	INT	ENM	ANN	EXP	NST	EXT	IMP	MDUInh	MInhF	CeR	CaR
+kalah.Display	1	2	1	1	7	0	0	0	1	7	0	0	0	1	0	0	0	0	0	0	1	1	0	0.083	0.167
+kalah.Game	3	1	1	4	4	0	0	0	4	4	0	0	0	1	0	0	0	0	0	0	1	1	0	0.250	0.083
+kalah.IDisplay	0	1	0	0	7	0	0	0	0	7	0	0	0	0	1	0	0	0	0	0	0	0	1	0.000	0.083
+kalah.IGame	0	1	0	0	4	0	0	0	0	4	0	0	0	0	1	0	0	0	0	0	0	0	1	0.000	0.083
+kalah.IGetID	0	3	0	0	1	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	1	0.000	0.250
+kalah.IGetScore	0	2	0	0	1	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	1	0.000	0.167
+kalah.IPlayerProp	2	1	0	0	14	0	0	0	0	14	0	0	0	0	1	0	0	0	0	0	0	0	1	0.167	0.083
+kalah.Kalah	2	0	1	1	1	0	0	0	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0.167	0.000
+kalah.Pits	1	2	1	2	5	0	0	0	2	5	0	0	0	1	0	0	0	0	0	0	1	1	0	0.083	0.167
+kalah.Player	2	1	1	2	3	0	0	0	2	3	0	0	0	1	0	0	0	0	0	0	1	1	0	0.167	0.083
+kalah.PlayerProp	4	1	1	10	14	0	0	0	10	14	0	0	0	1	0	0	0	0	0	0	1	1	0	0.333	0.083
+kalah.Store	2	2	1	2	3	0	0	0	2	3	0	0	0	1	0	0	0	0	0	0	1	1	0	0.167	0.167
+
+##Design Attributes
+a3-modular-kalah-zhua687	
+Total_Modules	12
+#CLS	7
+#INT	5
+#ENM	0
+#ANN	0
+#EXP	0
+#NST	0
+#MAIN	1
+DUI	0.500
+IF	0.417
+#IND	4
+#NDP	1
+NoInstanceMethods	0
+NoInstanceFields	0

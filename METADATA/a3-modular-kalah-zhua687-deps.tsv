@@ -1,0 +1,374 @@
+# Dependencies for a3-modular-kalah-zhua687
+# Analyse and report dependencies of modules.
+
+# Summary Information
+# Timestamp	Sun May 16 20:50:33 NZST 2021
+# Tool	mete-analysis(dependencies):20170202T1945
+# System	a3-modular-kalah-zhua687
+# Codebase	./submissions/a3-modular-kalah-zhua687/a3-modular-kalah-zhua687
+
+# Attribute Descriptions
+# 1	Source	The name of the module the dependency is from.
+# 2	Package	The package the source module belongs to. Provided for convenience as it is part of the source name
+# 3	Kind	Modules are classified into 1 of 5 'Kinds': Class, Interface, Enum, Annotation, Exception. 
+# 4	Modifiers	The modifiers for the source module (comma separated).
+# 5	Target	The name of the module the dependency is to.
+# 6	Package	The package the target module belongs to. Provided for convenience as it is part of the target name
+# 7	Kind	Modules are classified into 1 of 5 'Kinds': Class, Interface, Enum, Annotation, Exception. 
+# 8	Category	Dependencies are classified according to what kind of dependency they represent.
+# 9	Area	Classification of the area of the source module the dependency originates from.
+# 10	Details	More details of the origin of the dependency. Typically formatted text.
+# 11	Locations	Even more details of the origin of the dependency. Typically formatted text.
+# 12	Target	Information about the target of the dependency within the target module, if such makes sense.
+# 13	Visibility	The degree to which the dependency is visible outside the source module
+# 14	Inheritance	In what way is the dependency due to inheritance (if it is)
+
+# Data
+# Source	Package	Kind	Modifiers	Target	Package	Kind	Category	Area	Details	Locations	Target	Visibility	Inheritance
+kalah.PlayerProp	kalah	Class	public	java.lang.Object*	java.lang	Class	Extends	Header			To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.IPlayerProp	kalah	Interface	Implements	Header			To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	java.lang.Object*	java.lang	Class	InvokeSuper	Method	kalah.PlayerProp#public <init>() {}	1	java.lang.Object#public <init>() <>*	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeSpecial	Method	kalah.PlayerProp#public <init>() {}	3,5	kalah.Pits#public <init>(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	InvokeSpecial	Method	kalah.PlayerProp#public <init>() {}	7,9	kalah.Player#public <init>(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	InvokeSpecial	Method	kalah.PlayerProp#public <init>() {}	11,13	kalah.Store#public <init>(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public <init>() {}	16	kalah.Player#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public <init>() {}	17	kalah.PlayerProp#private int currentPlayer	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public <init>() {}	2	kalah.PlayerProp#public boolean noSeeds	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public <init>() {}	4	kalah.PlayerProp#private final kalah.Pits pitsOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public <init>() {}	6	kalah.PlayerProp#private final kalah.Pits pitsTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public <init>() {}	8	kalah.PlayerProp#private final kalah.Player playerOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public <init>() {}	15	kalah.PlayerProp#private final kalah.Player playerOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public <init>() {}	10	kalah.PlayerProp#private final kalah.Player playerTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public <init>() {}	12	kalah.PlayerProp#private final kalah.Store storeOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public <init>() {}	14	kalah.PlayerProp#private final kalah.Store storeTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public int[] pitArray(int) {}	0	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Return	Method	kalah.PlayerProp#public int[] pitArray(int) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	Local	Method	kalah.PlayerProp#public int[] pitArray(int) {}	0,2	To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Local	Method	kalah.PlayerProp#public int[] pitArray(int) {}	1,3	To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int[] pitArray(int) {}	2,7	kalah.Pits#public int getPitsLength() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int[] pitArray(int) {}	4	kalah.Pits#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int[] pitArray(int) {}	8	kalah.Pits#public int getSeedsInPos(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int[] pitArray(int) {}	3,5,1	kalah.PlayerProp#private final kalah.Pits pitsOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int[] pitArray(int) {}	6	kalah.PlayerProp#private final kalah.Pits pitsTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public int returnStoreScore(int) {}	0	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Return	Method	kalah.PlayerProp#public int returnStoreScore(int) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int returnStoreScore(int) {}	2	kalah.Store#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int returnStoreScore(int) {}	4,6	kalah.Store#public int getScore() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int returnStoreScore(int) {}	1,3	kalah.PlayerProp#private final kalah.Store storeOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int returnStoreScore(int) {}	5	kalah.PlayerProp#private final kalah.Store storeTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public int returnPlayerScore(int) {}	0	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Return	Method	kalah.PlayerProp#public int returnPlayerScore(int) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int returnPlayerScore(int) {}	2	kalah.Player#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int returnPlayerScore(int) {}	4,6	kalah.Player#public int getScore() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int returnPlayerScore(int) {}	1,3	kalah.PlayerProp#private final kalah.Player playerOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int returnPlayerScore(int) {}	5	kalah.PlayerProp#private final kalah.Player playerTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Return	Method	kalah.PlayerProp#public int getCurrentPlayer() {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int getCurrentPlayer() {}	1	kalah.PlayerProp#private int currentPlayer	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public void playerMoves(int) {}	0	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	void*		Primitive	Return	Method	kalah.PlayerProp#public void playerMoves(int) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Local	Method	kalah.PlayerProp#public void playerMoves(int) {}	0,1,2,3,4	To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void playerMoves(int) {}	1	kalah.PlayerProp#public void assignObjects() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void playerMoves(int) {}	3	kalah.Pits#public int getSeedsInPos(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void playerMoves(int) {}	5	kalah.Pits#public int getPitsLength() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void playerMoves(int) {}	7,17	kalah.Pits#public void emptyPit(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void playerMoves(int) {}	10	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void playerMoves(int) {}	13	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void playerMoves(int) {}	15	kalah.Pits#public void incrementPit(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void playerMoves(int) {}	19	kalah.PlayerProp#public void swapPlayersTurn() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public void playerMoves(int) {}	18	kalah.PlayerProp#public boolean noSeeds	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void playerMoves(int) {}	2,4,6,8,11,14,16	kalah.PlayerProp#private kalah.Pits pits	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void playerMoves(int) {}	9,12	kalah.PlayerProp#private kalah.Store store	Private	None
+kalah.PlayerProp	kalah	Class	public	boolean*		Primitive	Return	Method	kalah.PlayerProp#public boolean checkHouseEmpty() {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public boolean checkHouseEmpty() {}	1	kalah.PlayerProp#public boolean noSeeds	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public int returnSeedsPit(int,int) {}	0,1	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Return	Method	kalah.PlayerProp#public int returnSeedsPit(int,int) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int returnSeedsPit(int,int) {}	2	kalah.Pits#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public int returnSeedsPit(int,int) {}	4,6	kalah.Pits#public int getSeedsInPos(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int returnSeedsPit(int,int) {}	1,3	kalah.PlayerProp#private final kalah.Pits pitsOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public int returnSeedsPit(int,int) {}	5	kalah.PlayerProp#private final kalah.Pits pitsTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	0,1	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	void*		Primitive	Return	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	2	kalah.Store#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	5,9	kalah.Store#public int getScore() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	6,10	kalah.Player#public void setPlayerScore(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	3	kalah.PlayerProp#private final kalah.Player playerOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	7	kalah.PlayerProp#private final kalah.Player playerTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	1,4	kalah.PlayerProp#private final kalah.Store storeOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	8	kalah.PlayerProp#private final kalah.Store storeTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	void*		Primitive	Return	Method	kalah.PlayerProp#public void assignObjects() {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void assignObjects() {}	3	kalah.Player#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void assignObjects() {}	1	kalah.PlayerProp#private int currentPlayer	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public void assignObjects() {}	11,7	kalah.PlayerProp#private kalah.Pits pits	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void assignObjects() {}	6	kalah.PlayerProp#private final kalah.Pits pitsOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void assignObjects() {}	10	kalah.PlayerProp#private final kalah.Pits pitsTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void assignObjects() {}	2	kalah.PlayerProp#private final kalah.Player playerOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public void assignObjects() {}	9,5	kalah.PlayerProp#private kalah.Store store	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void assignObjects() {}	4	kalah.PlayerProp#private final kalah.Store storeOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void assignObjects() {}	8	kalah.PlayerProp#private final kalah.Store storeTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	Parameter	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	0	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	Parameter	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	1	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	2	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	void*		Primitive	Return	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Local	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	0,1	To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	1,6	kalah.Pits#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	3,12	kalah.Store#public void increaseStore(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	4,9	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	5	kalah.Pits#public int getPitsLength() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	8,11	kalah.Pits#public int getSeedsInPos(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	10,13	kalah.PlayerProp#public int getOppositePit(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	14	kalah.Pits#public void emptyPit(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	15	kalah.Pits#public void incrementPit(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void addExcessSeeds(kalah.Pits,kalah.Store,int) {}	7,2	kalah.PlayerProp#private int currentPlayer	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	0	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	Parameter	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	1	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	Parameter	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	2	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	boolean*		Primitive	Return	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Local	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	0,1,2	To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	1	kalah.PlayerProp#public int getOppositePit(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	2	kalah.Pits#public int getPitsLength() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	3,5,6	kalah.Pits#public int getSeedsInPos(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	4	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	7	kalah.Store#public void increaseStore(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public boolean checkCapture(int,kalah.Pits,kalah.Store) {}	8	kalah.Pits#public void emptyPit(int) {}	Private	None
+kalah.PlayerProp	kalah	Class	public	void*		Primitive	Return	Method	kalah.PlayerProp#public void swapPlayersTurn() {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public void swapPlayersTurn() {}	3,5,8	kalah.Player#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Put	Method	kalah.PlayerProp#public void swapPlayersTurn() {}	6,9	kalah.PlayerProp#private int currentPlayer	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void swapPlayersTurn() {}	1	kalah.PlayerProp#private int currentPlayer	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void swapPlayersTurn() {}	7,2	kalah.PlayerProp#private final kalah.Player playerOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public void swapPlayersTurn() {}	4	kalah.PlayerProp#private final kalah.Player playerTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.PlayerProp#public int getOppositePit(int) {}	0	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Return	Method	kalah.PlayerProp#public int getOppositePit(int) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	Parameter	Method	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}	0	To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	Return	Method	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}		To whole module	Public	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}	1	kalah.Pits#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	InvokeInstance	Method	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}	3	kalah.Player#public int getID() {}	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}	5	kalah.PlayerProp#private final kalah.Pits pitsOne	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}	4	kalah.PlayerProp#private final kalah.Pits pitsTwo	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.PlayerProp	kalah	Class	Get	Method	kalah.PlayerProp#public kalah.Pits switchPits(kalah.Pits) {}	2	kalah.PlayerProp#private final kalah.Player playerOne	Private	None
+kalah.PlayerProp	kalah	Class	public	int*		Primitive	Field	Field	kalah.PlayerProp#private int currentPlayer		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	Field	Field	kalah.PlayerProp#private final kalah.Pits pitsOne		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	Field	Field	kalah.PlayerProp#private final kalah.Pits pitsTwo		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	Field	Field	kalah.PlayerProp#private final kalah.Player playerOne		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Player	kalah	Class	Field	Field	kalah.PlayerProp#private final kalah.Player playerTwo		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	Field	Field	kalah.PlayerProp#private final kalah.Store storeOne		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	Field	Field	kalah.PlayerProp#private final kalah.Store storeTwo		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Store	kalah	Class	Field	Field	kalah.PlayerProp#private kalah.Store store		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	kalah.Pits	kalah	Class	Field	Field	kalah.PlayerProp#private kalah.Pits pits		To whole module	Private	None
+kalah.PlayerProp	kalah	Class	public	boolean*		Primitive	Field	Field	kalah.PlayerProp#public boolean noSeeds		To whole module	Public	None
+kalah.Player	kalah	Class	public	java.lang.Object*	java.lang	Class	Extends	Header			To whole module	Public	None
+kalah.Player	kalah	Class	public	kalah.IGetID	kalah	Interface	Implements	Header			To whole module	Public	None
+kalah.Player	kalah	Class	public	kalah.IGetScore	kalah	Interface	Implements	Header			To whole module	Public	None
+kalah.Player	kalah	Class	public	int*		Primitive	Parameter	Constructor	kalah.Player#public <init>(int) {}	0	To whole module	Public	None
+kalah.Player	kalah	Class	public	java.lang.Object*	java.lang	Class	InvokeSuper	Method	kalah.Player#public <init>(int) {}	1	java.lang.Object#public <init>() <>*	Private	None
+kalah.Player	kalah	Class	public	kalah.Player	kalah	Class	Put	Method	kalah.Player#public <init>(int) {}	2	kalah.Player#private final int PlayerID	Private	None
+kalah.Player	kalah	Class	public	kalah.Player	kalah	Class	Put	Method	kalah.Player#public <init>(int) {}	3	kalah.Player#private int score	Private	None
+kalah.Player	kalah	Class	public	int*		Primitive	Return	Method	kalah.Player#public int getScore() {}		To whole module	Public	None
+kalah.Player	kalah	Class	public	kalah.Player	kalah	Class	Get	Method	kalah.Player#public int getScore() {}	1	kalah.Player#private int score	Private	None
+kalah.Player	kalah	Class	public	int*		Primitive	Return	Method	kalah.Player#public int getID() {}		To whole module	Public	None
+kalah.Player	kalah	Class	public	kalah.Player	kalah	Class	Get	Method	kalah.Player#public int getID() {}	1	kalah.Player#private final int PlayerID	Private	None
+kalah.Player	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Player#public void setPlayerScore(int) {}	0	To whole module	Public	None
+kalah.Player	kalah	Class	public	void*		Primitive	Return	Method	kalah.Player#public void setPlayerScore(int) {}		To whole module	Public	None
+kalah.Player	kalah	Class	public	kalah.Player	kalah	Class	Put	Method	kalah.Player#public void setPlayerScore(int) {}	1	kalah.Player#private int score	Private	None
+kalah.Player	kalah	Class	public	int*		Primitive	Field	Field	kalah.Player#private final int PlayerID		To whole module	Private	None
+kalah.Player	kalah	Class	public	int*		Primitive	Field	Field	kalah.Player#private int score		To whole module	Private	None
+kalah.Kalah	kalah	Class	public	java.lang.Object*	java.lang	Class	Extends	Header			To whole module	Public	None
+kalah.Kalah	kalah	Class	public	java.lang.Object*	java.lang	Class	InvokeSuper	Method	kalah.Kalah#public <init>() {}	1	java.lang.Object#public <init>() <>*	Private	None
+kalah.Kalah	kalah	Class	public	kalah.Kalah	kalah	Class	Put	Method	kalah.Kalah#public <init>() {}	2	kalah.Kalah#private boolean gameRun	Private	None
+kalah.Kalah	kalah	Class	public	java.lang.String*	java.lang	Class	Parameter	Method	kalah.Kalah#public static void main(java.lang.String[]) {}	0	To whole module	Public	None
+kalah.Kalah	kalah	Class	public	void*		Primitive	Return	Method	kalah.Kalah#public static void main(java.lang.String[]) {}		To whole module	Public	None
+kalah.Kalah	kalah	Class	public	kalah.Kalah	kalah	Class	InvokeSpecial	Method	kalah.Kalah#public static void main(java.lang.String[]) {}	1	kalah.Kalah#public <init>() {}	Private	None
+kalah.Kalah	kalah	Class	public	com.qualitascorpus.testsupport.MockIO*?	com.qualitascorpus.testsupport	Unknown	InvokeSpecial	Method	kalah.Kalah#public static void main(java.lang.String[]) {}	2	com.qualitascorpus.testsupport.MockIO#<init>() <>*	Private	None
+kalah.Kalah	kalah	Class	public	kalah.Kalah	kalah	Class	InvokeInstance	Method	kalah.Kalah#public static void main(java.lang.String[]) {}	3	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	Private	None
+kalah.Kalah	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	Parameter	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	0	To whole module	Public	None
+kalah.Kalah	kalah	Class	public	void*		Primitive	Return	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}		To whole module	Public	None
+kalah.Kalah	kalah	Class	public	kalah.Display	kalah	Class	Local	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	0	To whole module	Private	None
+kalah.Kalah	kalah	Class	public	kalah.Game	kalah	Class	Local	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	1	To whole module	Private	None
+kalah.Kalah	kalah	Class	public	kalah.Display	kalah	Class	InvokeSpecial	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	1	kalah.Display#public <init>(com.qualitascorpus.testsupport.IO) {}	Private	None
+kalah.Kalah	kalah	Class	public	kalah.Game	kalah	Class	InvokeSpecial	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	2	kalah.Game#public <init>(kalah.Display) {}	Private	None
+kalah.Kalah	kalah	Class	public	kalah.Game	kalah	Class	InvokeInstance	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	4	kalah.Game#public boolean runGame() {}	Private	None
+kalah.Kalah	kalah	Class	public	kalah.Kalah	kalah	Class	Put	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	5	kalah.Kalah#private boolean gameRun	Private	None
+kalah.Kalah	kalah	Class	public	kalah.Kalah	kalah	Class	Get	Method	kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}	3	kalah.Kalah#private boolean gameRun	Private	None
+kalah.Kalah	kalah	Class	public	boolean*		Primitive	Field	Field	kalah.Kalah#private boolean gameRun		To whole module	Private	None
+kalah.Game	kalah	Class	public	java.lang.Object*	java.lang	Class	Extends	Header			To whole module	Public	None
+kalah.Game	kalah	Class	public	kalah.IGame	kalah	Interface	Implements	Header			To whole module	Public	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	Parameter	Constructor	kalah.Game#public <init>(kalah.Display) {}	0	To whole module	Public	None
+kalah.Game	kalah	Class	public	java.lang.Object*	java.lang	Class	InvokeSuper	Method	kalah.Game#public <init>(kalah.Display) {}	1	java.lang.Object#public <init>() <>*	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeSpecial	Method	kalah.Game#public <init>(kalah.Display) {}	4	kalah.PlayerProp#public <init>() {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Put	Method	kalah.Game#public <init>(kalah.Display) {}	3	kalah.Game#private final kalah.Display display	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Put	Method	kalah.Game#public <init>(kalah.Display) {}	5	kalah.Game#private final kalah.PlayerProp playerProp	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Put	Method	kalah.Game#public <init>(kalah.Display) {}	2	kalah.Game#private boolean printBoardOnce	Private	None
+kalah.Game	kalah	Class	public	boolean*		Primitive	Return	Method	kalah.Game#public boolean runGame() {}		To whole module	Public	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	4,18,31,65	kalah.PlayerProp#public int[] pitArray(int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	8,22,35,69	kalah.PlayerProp#public int returnStoreScore(int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	11,25,38,72	kalah.Display#public void boardPrint(int[],int[],int,int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	15,28	kalah.Display#public void printGameOver() {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	26	kalah.Game#public int getData(java.lang.String) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	41	kalah.PlayerProp#public int returnPlayerScore(int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	44	kalah.Display#public void printScore(int,int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	46	kalah.Game#public int getWinner() {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	47	kalah.Display#public void printWinner(int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	50	kalah.PlayerProp#public int getCurrentPlayer() {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	51	kalah.Display#public void userInput(int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	53	kalah.Display#public int getUserInput() {}	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	58	kalah.PlayerProp#public void playerMoves(int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	60	kalah.PlayerProp#public boolean checkHouseEmpty() {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	InvokeInstance	Method	kalah.Game#public boolean runGame() {}	62	kalah.Display#public void printHouseEmpty() {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Get	Method	kalah.Game#public boolean runGame() {}	48,52,61,63,2,14,16,27,29,39,45	kalah.Game#private final kalah.Display display	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Put	Method	kalah.Game#public boolean runGame() {}	54	kalah.Game#private int playerInput	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Get	Method	kalah.Game#public boolean runGame() {}	55,57,13	kalah.Game#private int playerInput	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Get	Method	kalah.Game#public boolean runGame() {}	49,56,59,66,64,70,68,7,3,9,5,19,21,17,23,30,32,36,34,42,40	kalah.Game#private final kalah.PlayerProp playerProp	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Put	Method	kalah.Game#public boolean runGame() {}	12	kalah.Game#private boolean printBoardOnce	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Get	Method	kalah.Game#public boolean runGame() {}	1	kalah.Game#private boolean printBoardOnce	Private	None
+kalah.Game	kalah	Class	public	java.lang.String*	java.lang	Class	Parameter	Method	kalah.Game#public int getData(java.lang.String) {}	0	To whole module	Public	None
+kalah.Game	kalah	Class	public	int*		Primitive	Return	Method	kalah.Game#public int getData(java.lang.String) {}		To whole module	Public	None
+kalah.Game	kalah	Class	public	int*		Primitive	Local	Method	kalah.Game#public int getData(java.lang.String) {}	0,1,2,3,4	To whole module	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public int getData(java.lang.String) {}	2,4,6,8	kalah.PlayerProp#public int returnSeedsPit(int,int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public int getData(java.lang.String) {}	10,12	kalah.PlayerProp#public void SetPlayerScores(int,int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public int getData(java.lang.String) {}	14	kalah.PlayerProp#public int returnPlayerScore(int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	InvokeInstance	Method	kalah.Game#public int getData(java.lang.String) {}	17	kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Get	Method	kalah.Game#public int getData(java.lang.String) {}	9,11,13,15,1,3,5,7	kalah.Game#private final kalah.PlayerProp playerProp	Private	None
+kalah.Game	kalah	Class	public	int*		Primitive	Return	Method	kalah.Game#public int getWinner() {}		To whole module	Public	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	InvokeInstance	Method	kalah.Game#public int getWinner() {}	1	kalah.Game#public int getData(java.lang.String) {}	Private	None
+kalah.Game	kalah	Class	public	java.lang.String*	java.lang	Class	Parameter	Method	kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}	0	To whole module	Public	None
+kalah.Game	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}	1,2,3,4	To whole module	Public	None
+kalah.Game	kalah	Class	public	int*		Primitive	Return	Method	kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}		To whole module	Public	None
+kalah.Game	kalah	Class	public	java.lang.String*	java.lang	Class	InvokeInstance	Method	kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}	1	java.lang.String#int hashCode() <>*	Private	None
+kalah.Game	kalah	Class	public	java.lang.String*	java.lang	Class	InvokeInstance	Method	kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}	2	java.lang.String#boolean equals(java.lang.Object) <>*	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	InvokeInstance	Method	kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}	5,7	kalah.PlayerProp#public int getCurrentPlayer() {}	Private	None
+kalah.Game	kalah	Class	public	kalah.Game	kalah	Class	Get	Method	kalah.Game#public int gameProgress(java.lang.String,int,int,int,int) {}	6,4	kalah.Game#private final kalah.PlayerProp playerProp	Private	None
+kalah.Game	kalah	Class	public	int*		Primitive	Field	Field	kalah.Game#private int playerInput		To whole module	Private	None
+kalah.Game	kalah	Class	public	boolean*		Primitive	Field	Field	kalah.Game#private boolean printBoardOnce		To whole module	Private	None
+kalah.Game	kalah	Class	public	kalah.Display	kalah	Class	Field	Field	kalah.Game#private final kalah.Display display		To whole module	Private	None
+kalah.Game	kalah	Class	public	kalah.PlayerProp	kalah	Class	Field	Field	kalah.Game#private final kalah.PlayerProp playerProp		To whole module	Private	None
+kalah.IGame	kalah	Interface	public,abstract	boolean*		Primitive	Return	Method	kalah.IGame#public abstract boolean runGame() <>		To whole module	Public	None
+kalah.IGame	kalah	Interface	public,abstract	java.lang.String*	java.lang	Class	Parameter	Method	kalah.IGame#public abstract int getData(java.lang.String) <>	0	To whole module	Public	None
+kalah.IGame	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IGame#public abstract int getData(java.lang.String) <>		To whole module	Public	None
+kalah.IGame	kalah	Interface	public,abstract	java.lang.String*	java.lang	Class	Parameter	Method	kalah.IGame#public abstract int gameProgress(java.lang.String,int,int,int,int) <>	0	To whole module	Public	None
+kalah.IGame	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IGame#public abstract int gameProgress(java.lang.String,int,int,int,int) <>	1,2,3,4	To whole module	Public	None
+kalah.IGame	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IGame#public abstract int gameProgress(java.lang.String,int,int,int,int) <>		To whole module	Public	None
+kalah.IGame	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IGame#public abstract int getWinner() <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract void playerMoves(int) <>	0	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IPlayerProp#public abstract void playerMoves(int) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IPlayerProp#public abstract void assignObjects() <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract boolean checkCapture(int,kalah.Pits,kalah.Store) <>	0	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	kalah.Pits	kalah	Class	Parameter	Method	kalah.IPlayerProp#public abstract boolean checkCapture(int,kalah.Pits,kalah.Store) <>	1	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	kalah.Store	kalah	Class	Parameter	Method	kalah.IPlayerProp#public abstract boolean checkCapture(int,kalah.Pits,kalah.Store) <>	2	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	boolean*		Primitive	Return	Method	kalah.IPlayerProp#public abstract boolean checkCapture(int,kalah.Pits,kalah.Store) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	kalah.Pits	kalah	Class	Parameter	Method	kalah.IPlayerProp#public abstract void addExcessSeeds(kalah.Pits,kalah.Store,int) <>	0	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	kalah.Store	kalah	Class	Parameter	Method	kalah.IPlayerProp#public abstract void addExcessSeeds(kalah.Pits,kalah.Store,int) <>	1	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract void addExcessSeeds(kalah.Pits,kalah.Store,int) <>	2	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IPlayerProp#public abstract void addExcessSeeds(kalah.Pits,kalah.Store,int) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	kalah.Pits	kalah	Class	Parameter	Method	kalah.IPlayerProp#public abstract kalah.Pits switchPits(kalah.Pits) <>	0	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	kalah.Pits	kalah	Class	Return	Method	kalah.IPlayerProp#public abstract kalah.Pits switchPits(kalah.Pits) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IPlayerProp#public abstract void swapPlayersTurn() <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract int getOppositePit(int) <>	0	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IPlayerProp#public abstract int getOppositePit(int) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	boolean*		Primitive	Return	Method	kalah.IPlayerProp#public abstract boolean checkHouseEmpty() <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IPlayerProp#public abstract int getCurrentPlayer() <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract int returnPlayerScore(int) <>	0	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IPlayerProp#public abstract int returnPlayerScore(int) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract int returnStoreScore(int) <>	0	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IPlayerProp#public abstract int returnStoreScore(int) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract int[] pitArray(int) <>	0	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IPlayerProp#public abstract int[] pitArray(int) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract void SetPlayerScores(int,int) <>	0,1	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IPlayerProp#public abstract void SetPlayerScores(int,int) <>		To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IPlayerProp#public abstract int returnSeedsPit(int,int) <>	0,1	To whole module	Public	None
+kalah.IPlayerProp	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IPlayerProp#public abstract int returnSeedsPit(int,int) <>		To whole module	Public	None
+kalah.Pits	kalah	Class	public	java.lang.Object*	java.lang	Class	Extends	Header			To whole module	Public	None
+kalah.Pits	kalah	Class	public	kalah.IGetID	kalah	Interface	Implements	Header			To whole module	Public	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Parameter	Constructor	kalah.Pits#public <init>(int) {}	0	To whole module	Public	None
+kalah.Pits	kalah	Class	public	java.lang.Object*	java.lang	Class	InvokeSuper	Method	kalah.Pits#public <init>(int) {}	1	java.lang.Object#public <init>() <>*	Private	None
+kalah.Pits	kalah	Class	public	java.util.Arrays*	java.util	Class	InvokeStatic	Method	kalah.Pits#public <init>(int) {}	5	java.util.Arrays#void fill(int[],int) <>*	Private	None
+kalah.Pits	kalah	Class	public	kalah.Pits	kalah	Class	Put	Method	kalah.Pits#public <init>(int) {}	2	kalah.Pits#private final int PitsID	Private	None
+kalah.Pits	kalah	Class	public	kalah.Pits	kalah	Class	Put	Method	kalah.Pits#public <init>(int) {}	3	kalah.Pits#private final int[] pits	Private	None
+kalah.Pits	kalah	Class	public	kalah.Pits	kalah	Class	Get	Method	kalah.Pits#public <init>(int) {}	4	kalah.Pits#private final int[] pits	Private	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Pits#public int getSeedsInPos(int) {}	0	To whole module	Public	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Return	Method	kalah.Pits#public int getSeedsInPos(int) {}		To whole module	Public	None
+kalah.Pits	kalah	Class	public	kalah.Pits	kalah	Class	Get	Method	kalah.Pits#public int getSeedsInPos(int) {}	1	kalah.Pits#private final int[] pits	Private	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Return	Method	kalah.Pits#public int getPitsLength() {}		To whole module	Public	None
+kalah.Pits	kalah	Class	public	kalah.Pits	kalah	Class	Get	Method	kalah.Pits#public int getPitsLength() {}	1	kalah.Pits#private final int[] pits	Private	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Pits#public void emptyPit(int) {}	0	To whole module	Public	None
+kalah.Pits	kalah	Class	public	void*		Primitive	Return	Method	kalah.Pits#public void emptyPit(int) {}		To whole module	Public	None
+kalah.Pits	kalah	Class	public	kalah.Pits	kalah	Class	Get	Method	kalah.Pits#public void emptyPit(int) {}	1	kalah.Pits#private final int[] pits	Private	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Pits#public void incrementPit(int) {}	0	To whole module	Public	None
+kalah.Pits	kalah	Class	public	void*		Primitive	Return	Method	kalah.Pits#public void incrementPit(int) {}		To whole module	Public	None
+kalah.Pits	kalah	Class	public	kalah.Pits	kalah	Class	Get	Method	kalah.Pits#public void incrementPit(int) {}	1	kalah.Pits#private final int[] pits	Private	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Return	Method	kalah.Pits#public int getID() {}		To whole module	Public	None
+kalah.Pits	kalah	Class	public	kalah.Pits	kalah	Class	Get	Method	kalah.Pits#public int getID() {}	1	kalah.Pits#private final int PitsID	Private	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Field	Field	kalah.Pits#private final int PitsID		To whole module	Private	None
+kalah.Pits	kalah	Class	public	int*		Primitive	Field	Field	kalah.Pits#private final int[] pits		To whole module	Private	None
+kalah.IGetID	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IGetID#public abstract int getID() <>		To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IDisplay#public abstract void userInput(int) <>	0	To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IDisplay#public abstract void userInput(int) <>		To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IDisplay#public abstract int getUserInput() <>		To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IDisplay#public abstract void printGameOver() <>		To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IDisplay#public abstract void printWinner(int) <>	0	To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IDisplay#public abstract void printWinner(int) <>		To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IDisplay#public abstract void printScore(int,int) <>	0,1	To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IDisplay#public abstract void printScore(int,int) <>		To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IDisplay#public abstract void printHouseEmpty() <>		To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	int*		Primitive	Parameter	Method	kalah.IDisplay#public abstract void boardPrint(int[],int[],int,int) <>	0,1,2,3	To whole module	Public	None
+kalah.IDisplay	kalah	Interface	public,abstract	void*		Primitive	Return	Method	kalah.IDisplay#public abstract void boardPrint(int[],int[],int,int) <>		To whole module	Public	None
+kalah.Display	kalah	Class	public	java.lang.Object*	java.lang	Class	Extends	Header			To whole module	Public	None
+kalah.Display	kalah	Class	public	kalah.IDisplay	kalah	Interface	Implements	Header			To whole module	Public	None
+kalah.Display	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Display#public void boardPrint(int[],int[],int,int) {}	0,1,2,3	To whole module	Public	None
+kalah.Display	kalah	Class	public	void*		Primitive	Return	Method	kalah.Display#public void boardPrint(int[],int[],int,int) {}		To whole module	Public	None
+kalah.Display	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	InvokeInterface	Method	kalah.Display#public void boardPrint(int[],int[],int,int) {}	2,12,14,24,26	com.qualitascorpus.testsupport.IO#void println(java.lang.String) <>*	Private	None
+kalah.Display	kalah	Class	public	java.lang.Integer*	java.lang	Class	InvokeStatic	Method	kalah.Display#public void boardPrint(int[],int[],int,int) {}	4,16	java.lang.Integer#java.lang.Integer valueOf(int) <>*	Private	None
+kalah.Display	kalah	Class	public	java.lang.String*	java.lang	Class	InvokeStatic	Method	kalah.Display#public void boardPrint(int[],int[],int,int) {}	11,23	java.lang.String#java.lang.String format(java.lang.String,java.lang.Object[]) <>*	Private	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Get	Method	kalah.Display#public void boardPrint(int[],int[],int,int) {}	13,15,25,1,3	kalah.Display#private final com.qualitascorpus.testsupport.IO io	Private	None
+kalah.Display	kalah	Class	public	void*		Primitive	Return	Method	kalah.Display#public void printGameOver() {}		To whole module	Public	None
+kalah.Display	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	InvokeInterface	Method	kalah.Display#public void printGameOver() {}	2	com.qualitascorpus.testsupport.IO#void println(java.lang.String) <>*	Private	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Get	Method	kalah.Display#public void printGameOver() {}	1	kalah.Display#private final com.qualitascorpus.testsupport.IO io	Private	None
+kalah.Display	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Display#public void printScore(int,int) {}	0,1	To whole module	Public	None
+kalah.Display	kalah	Class	public	void*		Primitive	Return	Method	kalah.Display#public void printScore(int,int) {}		To whole module	Public	None
+kalah.Display	kalah	Class	public	java.lang.Integer*	java.lang	Class	InvokeStatic	Method	kalah.Display#public void printScore(int,int) {}	2,6	java.lang.Integer#java.lang.Integer valueOf(int) <>*	Private	None
+kalah.Display	kalah	Class	public	java.lang.String*	java.lang	Class	InvokeStatic	Method	kalah.Display#public void printScore(int,int) {}	3,7	java.lang.String#java.lang.String format(java.lang.String,java.lang.Object[]) <>*	Private	None
+kalah.Display	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	InvokeInterface	Method	kalah.Display#public void printScore(int,int) {}	4,8	com.qualitascorpus.testsupport.IO#void println(java.lang.String) <>*	Private	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Get	Method	kalah.Display#public void printScore(int,int) {}	1,5	kalah.Display#private final com.qualitascorpus.testsupport.IO io	Private	None
+kalah.Display	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Display#public void printWinner(int) {}	0	To whole module	Public	None
+kalah.Display	kalah	Class	public	void*		Primitive	Return	Method	kalah.Display#public void printWinner(int) {}		To whole module	Public	None
+kalah.Display	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	InvokeInterface	Method	kalah.Display#public void printWinner(int) {}	2,4,6	com.qualitascorpus.testsupport.IO#void println(java.lang.String) <>*	Private	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Get	Method	kalah.Display#public void printWinner(int) {}	5,1,3	kalah.Display#private final com.qualitascorpus.testsupport.IO io	Private	None
+kalah.Display	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Display#public void userInput(int) {}	0	To whole module	Public	None
+kalah.Display	kalah	Class	public	void*		Primitive	Return	Method	kalah.Display#public void userInput(int) {}		To whole module	Public	None
+kalah.Display	kalah	Class	public	java.lang.String*	java.lang	Class	Local	Method	kalah.Display#public void userInput(int) {}	0	To whole module	Private	None
+kalah.Display	kalah	Class	public	java.lang.Integer*	java.lang	Class	InvokeStatic	Method	kalah.Display#public void userInput(int) {}	1	java.lang.Integer#java.lang.Integer valueOf(int) <>*	Private	None
+kalah.Display	kalah	Class	public	java.lang.String*	java.lang	Class	InvokeStatic	Method	kalah.Display#public void userInput(int) {}	2	java.lang.String#java.lang.String format(java.lang.String,java.lang.Object[]) <>*	Private	None
+kalah.Display	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	InvokeInterface	Method	kalah.Display#public void userInput(int) {}	4	com.qualitascorpus.testsupport.IO#int readInteger(java.lang.String,int,int,int,java.lang.String) <>*	Private	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Put	Method	kalah.Display#public void userInput(int) {}	5	kalah.Display#private int UserPrompt	Private	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Get	Method	kalah.Display#public void userInput(int) {}	3	kalah.Display#private final com.qualitascorpus.testsupport.IO io	Private	None
+kalah.Display	kalah	Class	public	int*		Primitive	Return	Method	kalah.Display#public int getUserInput() {}		To whole module	Public	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Get	Method	kalah.Display#public int getUserInput() {}	1	kalah.Display#private int UserPrompt	Private	None
+kalah.Display	kalah	Class	public	void*		Primitive	Return	Method	kalah.Display#public void printHouseEmpty() {}		To whole module	Public	None
+kalah.Display	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	InvokeInterface	Method	kalah.Display#public void printHouseEmpty() {}	2	com.qualitascorpus.testsupport.IO#void println(java.lang.String) <>*	Private	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Get	Method	kalah.Display#public void printHouseEmpty() {}	1	kalah.Display#private final com.qualitascorpus.testsupport.IO io	Private	None
+kalah.Display	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	Parameter	Constructor	kalah.Display#public <init>(com.qualitascorpus.testsupport.IO) {}	0	To whole module	Public	None
+kalah.Display	kalah	Class	public	java.lang.Object*	java.lang	Class	InvokeSuper	Method	kalah.Display#public <init>(com.qualitascorpus.testsupport.IO) {}	1	java.lang.Object#public <init>() <>*	Private	None
+kalah.Display	kalah	Class	public	kalah.Display	kalah	Class	Put	Method	kalah.Display#public <init>(com.qualitascorpus.testsupport.IO) {}	2	kalah.Display#private final com.qualitascorpus.testsupport.IO io	Private	None
+kalah.Display	kalah	Class	public	com.qualitascorpus.testsupport.IO*?	com.qualitascorpus.testsupport	Unknown	Field	Field	kalah.Display#private final com.qualitascorpus.testsupport.IO io		To whole module	Private	None
+kalah.Display	kalah	Class	public	int*		Primitive	Field	Field	kalah.Display#private int UserPrompt		To whole module	Private	None
+kalah.Store	kalah	Class	public	java.lang.Object*	java.lang	Class	Extends	Header			To whole module	Public	None
+kalah.Store	kalah	Class	public	kalah.IGetID	kalah	Interface	Implements	Header			To whole module	Public	None
+kalah.Store	kalah	Class	public	kalah.IGetScore	kalah	Interface	Implements	Header			To whole module	Public	None
+kalah.Store	kalah	Class	public	int*		Primitive	Parameter	Constructor	kalah.Store#public <init>(int) {}	0	To whole module	Public	None
+kalah.Store	kalah	Class	public	java.lang.Object*	java.lang	Class	InvokeSuper	Method	kalah.Store#public <init>(int) {}	1	java.lang.Object#public <init>() <>*	Private	None
+kalah.Store	kalah	Class	public	kalah.Store	kalah	Class	Put	Method	kalah.Store#public <init>(int) {}	2	kalah.Store#private final int StoreID	Private	None
+kalah.Store	kalah	Class	public	kalah.Store	kalah	Class	Put	Method	kalah.Store#public <init>(int) {}	3	kalah.Store#private int storeNum	Private	None
+kalah.Store	kalah	Class	public	int*		Primitive	Return	Method	kalah.Store#public int getScore() {}		To whole module	Public	None
+kalah.Store	kalah	Class	public	kalah.Store	kalah	Class	Get	Method	kalah.Store#public int getScore() {}	1	kalah.Store#private int storeNum	Private	None
+kalah.Store	kalah	Class	public	int*		Primitive	Return	Method	kalah.Store#public int getID() {}		To whole module	Public	None
+kalah.Store	kalah	Class	public	kalah.Store	kalah	Class	Get	Method	kalah.Store#public int getID() {}	1	kalah.Store#private final int StoreID	Private	None
+kalah.Store	kalah	Class	public	int*		Primitive	Parameter	Method	kalah.Store#public void increaseStore(int) {}	0	To whole module	Public	None
+kalah.Store	kalah	Class	public	void*		Primitive	Return	Method	kalah.Store#public void increaseStore(int) {}		To whole module	Public	None
+kalah.Store	kalah	Class	public	kalah.Store	kalah	Class	Put	Method	kalah.Store#public void increaseStore(int) {}	2	kalah.Store#private int storeNum	Private	None
+kalah.Store	kalah	Class	public	kalah.Store	kalah	Class	Get	Method	kalah.Store#public void increaseStore(int) {}	1	kalah.Store#private int storeNum	Private	None
+kalah.Store	kalah	Class	public	int*		Primitive	Field	Field	kalah.Store#private final int StoreID		To whole module	Private	None
+kalah.Store	kalah	Class	public	int*		Primitive	Field	Field	kalah.Store#private int storeNum		To whole module	Private	None
+kalah.IGetScore	kalah	Interface	public,abstract	int*		Primitive	Return	Method	kalah.IGetScore#public abstract int getScore() <>		To whole module	Public	None
+Main	null	Class	public	junit.framework.TestCase*?	junit.framework	Unknown	Extends	Header			To whole module	Public	None
+Main	null	Class	public	junit.framework.TestCase*?	junit.framework	Unknown	InvokeSuper	Method	Main#public <init>() {}	1	junit.framework.TestCase#<init>() <>*	Private	None
+Main	null	Class	public	java.lang.String*	java.lang	Class	Parameter	Method	Main#public static void main(java.lang.String[]) {}	0	To whole module	Public	None
+Main	null	Class	public	void*		Primitive	Return	Method	Main#public static void main(java.lang.String[]) {}		To whole module	Public	None
+Main	null	Class	public	junit.textui.TestRunner*?	junit.textui	Unknown	InvokeStatic	Method	Main#public static void main(java.lang.String[]) {}	1	junit.textui.TestRunner#void run(java.lang.Class) <>*	Private	None
